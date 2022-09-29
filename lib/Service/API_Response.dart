@@ -68,7 +68,7 @@ class Datum {
 class APIResponse {
   Future<ApiResponse> getAPIRESPONSE() async {
     final response = await get(Uri.parse(
-        'https://fluttertest.q3logics.com/api/getCities?device_id=aa1b0a9bab56fab2&lang_id=1&country_id=189&token={token}'));
+        'https://fluttertest.q3logics.com/api/getCities?device_id=aa1b0a9bab56fab2&lang_id=1&country_id=189&token=a98f280d1b8f19c058870422bbb8fb69'));
     final activity = apiResponseFromJson(response.body);
     return activity;
   }
